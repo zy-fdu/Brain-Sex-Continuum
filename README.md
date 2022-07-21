@@ -25,7 +25,7 @@ The toolbox runs under MATLAB circumstance.
     
 	FCmatrix:
 	Matrix with size of [94*94*n_subject(s)] or [264*264*n_subject(s)]. Unfortunately, the program only support FC based on AAL2(cerebral regions) or Power264 parcellation currently.
-        FCmatrix should NOT be Fisher-Z transformed.
+	FCmatrix should NOT be Fisher-Z transformed.
         
 	age:
 	Vector with size of [n_subject(s)*1], indicating age of the subject(s). Young subject(s) (subject(s) younger than around 20 y.o.) are not recommended for computing BSC through this program (though feasible).
