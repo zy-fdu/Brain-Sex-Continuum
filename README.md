@@ -21,7 +21,7 @@ The toolbox runs under MATLAB circumstance.
 
 ---------------------------------
 
-# Input of the toolbox
+## Input of the toolbox
     
 ### FCmatrix:
 	
@@ -45,5 +45,5 @@ Require at least 10 subjects input for not using empirical coefficient.
    
 ---
     
-# Output of the toolbox (BSC)
+## Output of the toolbox (BSC)
 The brain sex continuum of the input subject(s).
