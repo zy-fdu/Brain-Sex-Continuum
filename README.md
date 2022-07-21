@@ -11,6 +11,12 @@ If you have any problems, please contact Dr. Yi Zhang through yizhang_fd@fudan.e
 
 If this toolbox is used in your work, please cite the reference, namely Zhang Y, Luo Q, Huang C, et al. 2021. The Human Brain Is Best Described as Being on a Female/Male Continuum: Evidence from a Neuroimaging Connectivity Study. Cereb Cortex. bhaa 408.
 
+
+---
+
+## Update History
+version 1.0 Toolbox created by Yi Zhang on 19/July/2022.
+
 ---------------------------------
 This toolbox contains function for computing the brain sex continuum.
 
