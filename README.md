@@ -14,8 +14,8 @@ Zhang Y, Luo Q, Huang C, et al. 2021. The Human Brain Is Best Described as Being
 ---
 
 ## Update History
-### version 1.0
-Toolbox created by Yi Zhang on 19/July/2022.
+### version 1.0 (Yi Zhang, 19/July/2022)
+Toolbox created.
 
 ---------------------------------
 ## General description
