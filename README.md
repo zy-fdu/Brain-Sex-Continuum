@@ -7,6 +7,7 @@ If this toolbox is used in your work, please cite the reference, namely Zhang Y,
 This toolbox contains function for computing the brain sex continuum.
 
 *_regcoef.mat are coefficients derived from UKB and HCP for regressing out age to its third order term, the intercept term is also included.
+
 *_SVMcoef.mat are trained coefficients of the SVM classifier for computing the brain sex continuum.
 The toolbox runs under MATLAB circumstance.
 
@@ -14,7 +15,7 @@ The toolbox runs under MATLAB circumstance.
 1. Input of the toolbox
     
     1.1 FCmatrix
-        Matrix with size of [94*94*n_subject(s)] or [264*264*n_subject(s)]. Unfortunately, the program only support FC based on AAL2 or Power264 parcellation currently.
+        Matrix with size of [94*94*n_subject(s)] or [264*264*n_subject(s)]. Unfortunately, the program only support FC based on AAL2(cerebral regions) or Power264 parcellation currently.
         FCmatrix should NOT be Fisher-Z transformed.
         
     1.2 age
