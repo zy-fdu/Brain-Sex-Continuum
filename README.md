@@ -2,12 +2,14 @@
 
 Key words: brain sex continuum
 
-If this toolbox is used in your work, please cite the reference, namely Zhang Y, Luo Q, Huang C, et al. 2021. The Human Brain Is Best Described as Being on a Female/Male Continuum: Evidence from a Neuroimaging Connectivity Study. Cereb Cortex. bhaa 408.
+
+This toolbox for computing the brain sex continuum was last updated by Yi Zhang on 19/July/2022.<br>
+If you have any problems, please contact Dr. Yi Zhang through yizhang_fd@fudan.edu.cn.
+
 
 ---
 
-The toolbox was last updated by Yi Zhang on 19/July/2022.
-If you have any problems, please contact Dr. Yi Zhang through yizhang_fd@fudan.edu.cn.
+If this toolbox is used in your work, please cite the reference, namely Zhang Y, Luo Q, Huang C, et al. 2021. The Human Brain Is Best Described as Being on a Female/Male Continuum: Evidence from a Neuroimaging Connectivity Study. Cereb Cortex. bhaa 408.
 
 ---------------------------------
 This toolbox contains function for computing the brain sex continuum.
