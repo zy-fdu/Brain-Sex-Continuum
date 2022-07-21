@@ -23,18 +23,27 @@ The toolbox runs under MATLAB circumstance.
 
 # Input of the toolbox
     
-	FCmatrix:
-	Matrix with size of [94*94*n_subject(s)] or [264*264*n_subject(s)]. Unfortunately, the program only support FC based on AAL2(cerebral regions) or Power264 parcellation currently.
-	FCmatrix should NOT be Fisher-Z transformed.
+### FCmatrix:
+	
+Matrix with size of [94×94×n_subject(s)] or [264×264×n_subject(s)].<br>
+Unfortunately, the program only support FC based on AAL2(cerebral regions) or Power264 parcellation currently.<br>
+FCmatrix should __NOT__ be Fisher-Z transformed. 
         
-	age:
-	Vector with size of [n_subject(s)*1], indicating age of the subject(s). Young subject(s) (subject(s) younger than around 20 y.o.) are not recommended for computing BSC through this program (though feasible).
+	
+### age:
+	
+Vector with size of [n_subject(s)×1], indicating age of the subject(s).<br>
+Young subject(s) (subject(s) younger than around 20 y.o.) are not recommended for computing BSC through this program (though feasible).
 
-	UseEmpiricalRegCoef:
-	1 = use, 0 = not use.
-	Indicator of whether using regression coefficients from UKB and HCP for regressing out age-related terms from FC. If used, UKB coefficients will be used for regressing subjects older than 45, and HCP coefficients will be used for subjects younger than 45. Require at least 10 subjects input for not using empirical coefficient. 
+
+### UseEmpiricalRegCoef:
+	
+1 = use, 0 = not use.<br>
+Indicator of whether using regression coefficients from UKB and HCP for regressing out age-related terms from FC.<br>
+If used, UKB coefficients will be used for regressing subjects older than 45, and HCP coefficients will be used for subjects younger than 45.<br>
+Require at least 10 subjects input for not using empirical coefficient. 
    
-   
+---
     
 # Output of the toolbox (BSC)
-	The brain sex continuum of the input subject(s).
+The brain sex continuum of the input subject(s).
