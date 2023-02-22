@@ -7,6 +7,10 @@ function BSC = computeBSC(FCmatrix,age,UseEmpiricalRegCoef)
 %                                                                         %
 % Zhang et al. 2021, doi: 10.1093/cercor/bhaa408                          %
 %                                                                         %
+% version 1.0.1                                                           %
+% Last Updated by Yi Zhang on 22/Feb/2023                                 %
+% yz821@cam.ac.uk                                                         %
+%                                                                         %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INPUT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                         %
 % FCmatrix                                                                %
@@ -33,8 +37,16 @@ function BSC = computeBSC(FCmatrix,age,UseEmpiricalRegCoef)
 % BSC                                                                     %
 % The brain sex continuum of the input subject(s).                        %
 %                                                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% updating history %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                         %
-%%%%%%%%%%%%%%%%% Last Updated by Yi Zhang 19/July/2022 %%%%%%%%%%%%%%%%%%%
+%                               19/July/2022                              %
+% (v 1.0.0) creating the manuscript for calculating BSC.                  %
+%                                                                         %
+%                               22/Feb/2023                               %
+% (v 1.0.1) adding noticing words and updating history                    %
+% revising the problems that assigning the calculated BSC to 3rd column.  %
+%                                                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 % basic information
@@ -75,16 +87,18 @@ if size(age,2)~=1
 end
 age_term = [age,age.^2,age.^3];
 if UseEmpiricalRegCoef == 0
+    fprintf("Using data-driven parameters...\n")
     for i_ROI = 1:(n_ROI*(n_ROI-1)/2)
         glmstruct = fitglm(age_term,FCvec(:,i_ROI));
         b = glmstruct.Coefficients.Estimate;
         FC_regressed(:,i_ROI) = FCvec(:,i_ROI)-[ones(n_subject,1),age_term]*b;
     end
 else
+    fprintf("Using empirical parameters...\n")
     FC_regressed(age>=45,:) = FCvec(age>=45,:) - [ones(sum(age>=45),1),age_term(age>=45,:)]*b_UKB;
     FC_regressed(age<45,:) = FCvec(age<45,:) - [ones(sum(age<45),1),age_term(age<45,:)]*b_HCP;
 end
 
 % compute BSC
 clfscore = [ones(n_subject,1) FC_regressed/12]*SVMbeta;
-BSC(:,3) = normcdf(clfscore);
+BSC = normcdf(clfscore);
