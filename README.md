@@ -3,7 +3,7 @@
 Key words: brain sex continuum
 
 
-This toolbox for computing the brain sex continuum was last updated by Yi Zhang on 19/July/2022.
+This toolbox for computing the brain sex continuum was last updated by Yi Zhang on 22/Feb/2023.
 
 If you have any troubles when implementing the toolbox, please contact Dr. Yi Zhang through yizhang_fd@fudan.edu.cn.
 
@@ -16,6 +16,10 @@ Zhang Y, Luo Q, Huang C, et al. 2021. The Human Brain Is Best Described as Being
 ## Update History
 ### version 1.0 (Yi Zhang, 19/July/2022)
 Toolbox created.
+
+### version 1.0.1 (Yi Zhang 22/Feb/2023)
+adding noticing words and updating history
+revising the problems that assign the calculated BSC to the 3rd column.
 
 ---------------------------------
 ## General description
